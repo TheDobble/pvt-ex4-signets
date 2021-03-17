@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pvt-ex4-signets/static/css/main.be14603c.chunk.css",
+    "main.js": "/pvt-ex4-signets/static/js/main.f9c4fcc2.chunk.js",
+    "main.js.map": "/pvt-ex4-signets/static/js/main.f9c4fcc2.chunk.js.map",
+    "runtime-main.js": "/pvt-ex4-signets/static/js/runtime-main.c3f30e58.js",
+    "runtime-main.js.map": "/pvt-ex4-signets/static/js/runtime-main.c3f30e58.js.map",
+    "static/css/2.b39b49d3.chunk.css": "/pvt-ex4-signets/static/css/2.b39b49d3.chunk.css",
+    "static/js/2.bfe18725.chunk.js": "/pvt-ex4-signets/static/js/2.bfe18725.chunk.js",
+    "static/js/2.bfe18725.chunk.js.map": "/pvt-ex4-signets/static/js/2.bfe18725.chunk.js.map",
+    "index.html": "/pvt-ex4-signets/index.html",
+    "static/css/2.b39b49d3.chunk.css.map": "/pvt-ex4-signets/static/css/2.b39b49d3.chunk.css.map",
+    "static/css/main.be14603c.chunk.css.map": "/pvt-ex4-signets/static/css/main.be14603c.chunk.css.map",
+    "static/js/2.bfe18725.chunk.js.LICENSE.txt": "/pvt-ex4-signets/static/js/2.bfe18725.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3f30e58.js",
+    "static/css/2.b39b49d3.chunk.css",
+    "static/js/2.bfe18725.chunk.js",
+    "static/css/main.be14603c.chunk.css",
+    "static/js/main.f9c4fcc2.chunk.js"
+  ]
+}
