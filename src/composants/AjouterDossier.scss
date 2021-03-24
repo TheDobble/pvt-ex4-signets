@@ -1,0 +1,29 @@
+.champsDialog{
+    width: 450px; //Le champ de selection de couleur prenait 2 lignes
+    padding-left: 7%;
+    padding-right: 7%;
+     &>div:first-of-type{
+        margin-bottom: 20px;
+     }  
+}
+
+.DialogButtons{
+    &>button{
+        color: white;
+        display: inline;
+        float: right;
+        margin: 15px 15px 15px 0px;
+        padding-left: 7px;
+    }
+    &>button:first-of-type{
+        background-color: red;
+    }
+    &>button:last-of-type{
+        background-color: green;
+    }
+
+    &>button:hover{
+        background-color: lightgray;
+        color:#3f51b5;
+    }
+}

@@ -20,6 +20,7 @@ export default function ListeDossiers({utilisateur, etatDossiers}) {
           // ... et pour chaque doc dans la réponse on ajoute un objet dans tabDossiers
           doc => {
             tabDossiers.push({id: doc.id, ...doc.data()})
+            
           }
           // Remarquez que le 'id' ne fait pas partie des attributs de données des documents sur Firestore, et il faut l'extraire séparément avec la propriété 'id'. Remarquez aussi l'utilisation de l'opérateur de décomposition (spread operator (...))
         );
@@ -30,14 +31,30 @@ export default function ListeDossiers({utilisateur, etatDossiers}) {
       chercherDossiers();
     }, []
   );
+  console.log(dossiers);
+  if(dossiers.length != 0){
+    return (
 
-  return (
-    <ul className="ListeDossiers">
-      {
-        dossiers.map( 
-          dossier =>  <li key={dossier.id}><Dossier {...dossier} /></li>
-        )
-      }
-    </ul>
-  );
+      <ul className="ListeDossiers">
+        {
+          dossiers.map( 
+            dossier =>  <li key={dossier.id}><Dossier {...dossier} /></li>
+          )
+        }
+      </ul>
+    );
+  }
+  else{
+    return(
+      <ul className="ListeDossiers">
+        <li>
+          <article className="DossierVide">
+            <p>Votre liste de dossiers est vide</p>
+            <h1>;-(</h1>
+          </article>
+        </li>
+      </ul>
+    )
+  }
+
 }

@@ -6,6 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { useState } from 'react';
 import { TwitterPicker } from 'react-color';
+import './AjouterDossier.scss';
 
 export default function AjouterDossier({ouvert, setOuvert, gererAjout}) {
   const [nom, setNom] = useState('');
@@ -22,7 +23,7 @@ export default function AjouterDossier({ouvert, setOuvert, gererAjout}) {
     <div className="AjouterDossier">
       <Dialog open={ouvert} onClose={()=>setOuvert(false)} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Ajouter un dossier</DialogTitle>
-        <DialogContent>
+        <DialogContent className="champsDialog"> 
           <TextField
             autoFocus
             margin="dense"
@@ -43,13 +44,14 @@ export default function AjouterDossier({ouvert, setOuvert, gererAjout}) {
             defaultValue={couverture}
           />
           <TwitterPicker 
+            colors= {['#537169', '#55bbb2', '#f6d2a3', '#f3d379', '#fb7778', '#5990b8']}
             width="100%" 
             triangle="hide" 
             onChangeComplete={(couleur, e) => setCouleur(couleur.hex)}
             color={couleur}
           />
         </DialogContent>
-        <DialogActions>
+        <DialogActions className="DialogButtons">
           <Button onClick={()=>{setOuvert(false); viderChamps()}} color="primary">
             Annuler
           </Button>
